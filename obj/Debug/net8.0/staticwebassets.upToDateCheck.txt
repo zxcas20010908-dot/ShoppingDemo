@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Images\logo.png
 wwwroot\Images\m1001.png
 wwwroot\Images\m1002.png
 wwwroot\Images\m1003.png
