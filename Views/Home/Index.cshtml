@@ -1,8 +1,31 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@inject IHttpContextAccessor HttpContextAccessor  /*session套件匯入*/
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+@foreach (var item in Model)
+{
+	<div class="col-md-3 mb-4">
+			<div class="thumbnail">
+			<img src ="~/Images/@item.png" style="width:70%" />
+				<div class="caption">
+					<h2>@item.title</h2>
+					<p>單價：@item.price</p>
+					@if (@HttpContextAccessor.HttpContext.Session.GetString("account") == null)
+					{
+						<p></p>
+					}
+					else
+					{
+						<p><a href="@Url.Action("AddCar")?mNum=@item.num" class="btn btn-primary">加入購物車</a></p>
+					}
+				</div>
+
+
+		</div>
+	</div>
+}
 </div>
+

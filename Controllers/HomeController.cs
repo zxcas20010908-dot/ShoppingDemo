@@ -6,6 +6,7 @@ namespace Demo1.Controllers
 {
     public class HomeController : Controller
     {
+        ShoppingContext db = new ShoppingContext();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,7 +16,8 @@ namespace Demo1.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var pro = db.Product.ToList();
+            return View(pro);
         }
 
         public IActionResult Privacy()
