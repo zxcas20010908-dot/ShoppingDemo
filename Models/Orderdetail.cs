@@ -17,6 +17,7 @@ public partial class Orderdetail
     [Unicode(false)]
     public string ordersnum { get; set; }
 
+    [Required]
     [StringLength(10)]
     [Unicode(false)]
     public string account { get; set; }
@@ -27,12 +28,17 @@ public partial class Orderdetail
     [Unicode(false)]
     public string productnum { get; set; }
 
-    [StringLength(50)]
-    public string producttitle { get; set; }
-
     public int? qty { get; set; }
 
     public int? price { get; set; }
 
     public int? total { get; set; }
+
+    [ForeignKey("account")]
+    [InverseProperty("Orderdetail")]
+    public virtual Customer accountNavigation { get; set; }
+
+    [ForeignKey("productnum")]
+    [InverseProperty("Orderdetail")]
+    public virtual Product productnumNavigation { get; set; }
 }

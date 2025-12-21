@@ -8,11 +8,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Demo1.Models;
 
+[Index("account", Name = "IX_Customer", IsUnique = true)]
 public partial class Customer
 {
     [Key]
     public int id { get; set; }
 
+    [Required]
     [StringLength(10)]
     [Unicode(false)]
     public string account { get; set; }
@@ -32,4 +34,7 @@ public partial class Customer
     public string address { get; set; }
 
     public bool? employee { get; set; }
+
+    [InverseProperty("accountNavigation")]
+    public virtual ICollection<Orderdetail> Orderdetail { get; set; } = new List<Orderdetail>();
 }

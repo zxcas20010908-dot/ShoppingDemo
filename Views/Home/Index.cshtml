@@ -1,4 +1,5 @@
 ﻿@inject IHttpContextAccessor HttpContextAccessor  /*session套件匯入*/
+@model IEnumerable<Demo1.Models.Product>
 
 @{
 	ViewData["Title"] = "Index";
@@ -9,11 +10,11 @@
 {
 	<div class="col-md-3 mb-4">
 			<div class="thumbnail">
-			<img src ="~/Images/@item.png" style="width:70%" />
+			<img src ="~/Images/@item.img" style="width:70%" />
 				<div class="caption">
 					<h2>@item.title</h2>
 					<p>單價：@item.price</p>
-					@if (@HttpContextAccessor.HttpContext.Session.GetString("account") == null)
+					@if (HttpContextAccessor.HttpContext.Session.GetString("account") == null)
 					{
 						<p></p>
 					}

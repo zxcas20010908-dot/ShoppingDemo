@@ -25,4 +25,7 @@ public partial class Product
 
     [StringLength(5)]
     public string kind { get; set; }
+
+    [InverseProperty("productnumNavigation")]
+    public virtual ICollection<Orderdetail> Orderdetail { get; set; } = new List<Orderdetail>();
 }

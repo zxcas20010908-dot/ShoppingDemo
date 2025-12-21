@@ -44,6 +44,14 @@ public partial class ShoppingContext : DbContext
         modelBuilder.Entity<Orderdetail>(entity =>
         {
             entity.HasKey(e => e.id).HasName("PK_orderdetail");
+
+            entity.HasOne(d => d.accountNavigation).WithMany(p => p.Orderdetail)
+                .HasPrincipalKey(p => p.account)
+                .HasForeignKey(d => d.account)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Orderdetail_Customer");
+
+            entity.HasOne(d => d.productnumNavigation).WithMany(p => p.Orderdetail).HasConstraintName("FK_Orderdetail_Product");
         });
 
         modelBuilder.Entity<Product>(entity =>
