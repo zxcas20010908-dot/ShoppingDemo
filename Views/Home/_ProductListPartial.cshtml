@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Demo1.Models.Product>
+@inject IHttpContextAccessor HttpContextAccessor  /*session套件匯入*/
+
+<div class=" row">
+	@foreach (var item in Model)
+	{
+		<div class="col-md-3 mb-4">
+			<div class="thumbnail">
+				<img src="~/Images/@item.img" style="width:70%" />
+				<div class="caption">
+					<h2>@item.title</h2>
+					<p>單價：@item.price</p>
+					@if (HttpContextAccessor.HttpContext.Session.GetString("account") == null)
+					{
+						<p></p>
+					}
+					else
+					{
+						<p><a href="@Url.Action("AddCar")?mNum=@item.num" class="btn btn-primary">加入購物車</a></p>
+					}
+				</div>
+			</div>
+		</div>
+	}
+</div>

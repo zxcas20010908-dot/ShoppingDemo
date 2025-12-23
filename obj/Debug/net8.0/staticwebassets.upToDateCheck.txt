@@ -20,6 +20,7 @@ wwwroot\Images\m1016.png
 wwwroot\Images\m1017.png
 wwwroot\Images\m1018.png
 wwwroot\Images\m1019.png
+wwwroot\Images\shopcar.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

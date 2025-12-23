@@ -283,3 +283,4 @@ D:\Demo\Demo1\obj\Debug\net8.0\refint\Demo1.dll
 D:\Demo\Demo1\obj\Debug\net8.0\Demo1.pdb
 D:\Demo\Demo1\obj\Debug\net8.0\Demo1.genruntimeconfig.cache
 D:\Demo\Demo1\obj\Debug\net8.0\ref\Demo1.dll
+D:\Demo\Demo1\obj\Debug\net8.0\Demo1.sourcelink.json

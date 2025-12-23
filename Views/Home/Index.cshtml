@@ -1,32 +1,58 @@
-﻿@inject IHttpContextAccessor HttpContextAccessor  /*session套件匯入*/
-@model IEnumerable<Demo1.Models.Product>
+﻿@model IEnumerable<Demo1.Models.Product>
 
 @{
 	ViewData["Title"] = "Index";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="row">
-@foreach (var item in Model)
-{
-	<div class="col-md-3 mb-4">
-			<div class="thumbnail">
-			<img src ="~/Images/@item.img" style="width:70%" />
-				<div class="caption">
-					<h2>@item.title</h2>
-					<p>單價：@item.price</p>
-					@if (HttpContextAccessor.HttpContext.Session.GetString("account") == null)
+<div class="container-fluid">
+	@* 滿版容器 *@
+	<div class="row">
+		<aside class="col-md-2">
+			<h4 class="mb-3">Classify</h4>
+			<div class="list-group">
+				<a asp-action="Index" asp-route-kind="" class="list-group-item list-group-item-action ajax-link">All Products</a>
+				@if (ViewBag.CategoriesList != null)
+				{
+					foreach (var categories in ViewBag.CategoriesList)
 					{
-						<p></p>
+						<a asp-action="Index" asp-route-kind="@categories" class="list-group-item list-group-item-action ajax-link">@categories</a>
 					}
-					else
-					{
-						<p><a href="@Url.Action("AddCar")?mNum=@item.num" class="btn btn-primary">加入購物車</a></p>
-					}
-				</div>
+				}
+			</div>
+		</aside>
 
-
-		</div>
+		<main class="col-md-10">
+			<div id="product-display-area">
+				<partial name="_ProductListPartial" model="Model" />
+			</div>
+		</main>
 	</div>
-}
 </div>
+
+@section Scripts {
+	<script>
+		$(document).ready(function () {
+			// 監聽左側選單點擊事件
+			$('.ajax-link').click(function (e) {
+				e.preventDefault(); // 阻止原本的頁面跳轉
+
+				var targetUrl = $(this).attr('href'); // 取得分類網址
+
+				// 發送 AJAX 請求
+				$.ajax({
+					url: targetUrl,
+					type: 'GET',
+					headers: { "X-Requested-With": "XMLHttpRequest" }, // 讓後端知道這是 AJAX
+					success: function (response) {
+						// 將回傳的 PartialView HTML 塞入右側區域
+						$('#product-display-area').html(response);
+					},
+					error: function () {
+						alert("資料載入失敗！");
+					}
+				});
+			});
+		});
+	</script>
+}
 
