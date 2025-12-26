@@ -45,18 +45,16 @@ public partial class ShoppingContext : DbContext
         {
             entity.HasKey(e => e.id).HasName("PK_orderdetail");
 
-            entity.HasOne(d => d.accountNavigation).WithMany(p => p.Orderdetail)
-                .HasPrincipalKey(p => p.account)
-                .HasForeignKey(d => d.account)
+            entity.Property(e => e.id).ValueGeneratedNever();
+
+            entity.HasOne(d => d.cust).WithMany(p => p.Orderdetail)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Orderdetail_Customer");
-
-            entity.HasOne(d => d.productnumNavigation).WithMany(p => p.Orderdetail).HasConstraintName("FK_Orderdetail_Product");
         });
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.HasKey(e => e.num).HasName("PK_menu");
+            entity.HasKey(e => e.id).HasName("PK_menu");
         });
 
         OnModelCreatingPartial(modelBuilder);

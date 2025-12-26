@@ -11,6 +11,9 @@ namespace Demo1.Models;
 public partial class Product
 {
     [Key]
+    public int id { get; set; }
+
+    [Required]
     [StringLength(5)]
     [Unicode(false)]
     public string num { get; set; }
@@ -23,9 +26,6 @@ public partial class Product
     [StringLength(30)]
     public string img { get; set; }
 
-    [StringLength(5)]
+    [StringLength(10)]
     public string kind { get; set; }
-
-    [InverseProperty("productnumNavigation")]
-    public virtual ICollection<Orderdetail> Orderdetail { get; set; } = new List<Orderdetail>();
 }

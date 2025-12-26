@@ -13,14 +13,11 @@ public partial class Orderdetail
     [Key]
     public int id { get; set; }
 
+    public int custid { get; set; }
+
     [StringLength(50)]
     [Unicode(false)]
     public string ordersnum { get; set; }
-
-    [Required]
-    [StringLength(10)]
-    [Unicode(false)]
-    public string account { get; set; }
 
     public DateOnly? orderdate { get; set; }
 
@@ -34,11 +31,7 @@ public partial class Orderdetail
 
     public int? total { get; set; }
 
-    [ForeignKey("account")]
+    [ForeignKey("custid")]
     [InverseProperty("Orderdetail")]
-    public virtual Customer accountNavigation { get; set; }
-
-    [ForeignKey("productnum")]
-    [InverseProperty("Orderdetail")]
-    public virtual Product productnumNavigation { get; set; }
+    public virtual Customer cust { get; set; }
 }

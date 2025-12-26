@@ -35,6 +35,6 @@ public partial class Customer
 
     public bool? employee { get; set; }
 
-    [InverseProperty("accountNavigation")]
+    [InverseProperty("cust")]
     public virtual ICollection<Orderdetail> Orderdetail { get; set; } = new List<Orderdetail>();
 }

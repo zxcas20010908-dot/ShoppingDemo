@@ -15,7 +15,6 @@ D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Build.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Build.Framework.dll
-D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Build.Locator.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -26,8 +25,6 @@ D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
@@ -36,9 +33,7 @@ D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
@@ -47,7 +42,6 @@ D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 D:\Demo\Demo1\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -84,18 +78,13 @@ D:\Demo\Demo1\bin\Debug\net8.0\System.Composition.Hosting.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.Composition.Runtime.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.Composition.TypedParts.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\Demo\Demo1\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-D:\Demo\Demo1\bin\Debug\net8.0\System.Formats.Asn1.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Demo\Demo1\bin\Debug\net8.0\System.IO.Pipelines.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.Memory.Data.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.Runtime.Caching.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\Demo\Demo1\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
-D:\Demo\Demo1\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-D:\Demo\Demo1\bin\Debug\net8.0\System.Text.Json.dll
 D:\Demo\Demo1\bin\Debug\net8.0\af\Humanizer.resources.dll
 D:\Demo\Demo1\bin\Debug\net8.0\ar\Humanizer.resources.dll
 D:\Demo\Demo1\bin\Debug\net8.0\az\Humanizer.resources.dll
@@ -235,19 +224,6 @@ D:\Demo\Demo1\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dl
 D:\Demo\Demo1\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Demo\Demo1\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Demo\Demo1\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Demo\Demo1\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\Demo\Demo1\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
 D:\Demo\Demo1\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 D:\Demo\Demo1\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
@@ -256,7 +232,6 @@ D:\Demo\Demo1\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.
 D:\Demo\Demo1\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Demo\Demo1\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\Demo\Demo1\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Demo\Demo1\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\Demo\Demo1\obj\Debug\net8.0\Demo1.csproj.AssemblyReference.cache
 D:\Demo\Demo1\obj\Debug\net8.0\rpswa.dswa.cache.json
 D:\Demo\Demo1\obj\Debug\net8.0\Demo1.GeneratedMSBuildEditorConfig.editorconfig
@@ -266,6 +241,7 @@ D:\Demo\Demo1\obj\Debug\net8.0\Demo1.csproj.CoreCompileInputs.cache
 D:\Demo\Demo1\obj\Debug\net8.0\Demo1.MvcApplicationPartsAssemblyInfo.cache
 D:\Demo\Demo1\obj\Debug\net8.0\Demo1.RazorAssemblyInfo.cache
 D:\Demo\Demo1\obj\Debug\net8.0\Demo1.RazorAssemblyInfo.cs
+D:\Demo\Demo1\obj\Debug\net8.0\Demo1.sourcelink.json
 D:\Demo\Demo1\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\Demo\Demo1\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\Demo\Demo1\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -283,4 +259,3 @@ D:\Demo\Demo1\obj\Debug\net8.0\refint\Demo1.dll
 D:\Demo\Demo1\obj\Debug\net8.0\Demo1.pdb
 D:\Demo\Demo1\obj\Debug\net8.0\Demo1.genruntimeconfig.cache
 D:\Demo\Demo1\obj\Debug\net8.0\ref\Demo1.dll
-D:\Demo\Demo1\obj\Debug\net8.0\Demo1.sourcelink.json

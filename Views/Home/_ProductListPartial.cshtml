@@ -8,7 +8,7 @@
 			<div class="thumbnail">
 				<img src="~/Images/@item.img" style="width:70%" />
 				<div class="caption">
-					<h2>@item.title</h2>
+					<p class="title">@item.title</p>
 					<p>單價：@item.price</p>
 					@if (HttpContextAccessor.HttpContext.Session.GetString("account") == null)
 					{

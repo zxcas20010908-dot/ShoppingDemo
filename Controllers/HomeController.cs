@@ -68,5 +68,36 @@ namespace Demo1.Controllers
             ViewBag.Message = "登入成功";
             return RedirectToAction("Shopping");
         }
+        public ActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Register(string account, string password, string name, string tel, string address)
+        {
+            var acc = db.Customer.Where(mbox => mbox.account == account).FirstOrDefault();
+            if (acc != null)
+            {
+                TempData["AlertMessage"] = "註冊失敗，請檢查資料是否正確。"; //Bootstrap
+                TempData["AlertType"] = "danger";
+                return View("Register");
+            }
+            Customer member = new Customer();
+            member.account = account;
+            member.password = password;
+            member.name = name;
+            member.tel = tel;
+            member.address = address;
+            db.Customer.Add(member);
+            db.SaveChanges();
+            ViewBag.message = "註冊成功，請重新登入";
+            return RedirectToAction("Login");
+        }
     }
 }

@@ -41,3 +41,8 @@ body {
         color: #007bff !important; /* 變成藍色 */
         text-decoration:underline; /* 加上簡單下劃線 */
     }
+    
+.title{
+    font-size:25px;
+    color:brown;
+}
