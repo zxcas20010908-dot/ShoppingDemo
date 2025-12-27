@@ -32,17 +32,42 @@ body {
 /* 1. 讓文字更清晰 */
 .nav-link {
     font-weight: 500;
-    padding: 8px 15px ; /* 增加點擊範圍 */
+    padding: 8px 15px; /* 增加點擊範圍 */
     transition: all 0.2s; /* 讓變色過程順滑 */
 }
 
     /* 2. 滑鼠移上去變色並加一條小底線 */
     .nav-link:hover {
         color: #007bff !important; /* 變成藍色 */
-        text-decoration:underline; /* 加上簡單下劃線 */
+        text-decoration: underline; /* 加上簡單下劃線 */
     }
-    
-.title{
-    font-size:25px;
-    color:brown;
+
+.title {
+    font-size: 25px;
+    color: brown;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.banner-about {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.shoppingcar-customer {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+    border: 2px dotted #ccc;
+    border-radius: 10px;
+    background-color: cornflowerblue;
 }

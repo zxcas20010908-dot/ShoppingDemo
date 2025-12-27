@@ -1,5 +1,5 @@
-wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Images\about.png
 wwwroot\Images\logo.png
 wwwroot\Images\m1001.png
 wwwroot\Images\m1002.png
@@ -79,3 +79,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\site.css

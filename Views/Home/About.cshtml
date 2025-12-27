@@ -1,0 +1,16 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+	ViewData["Title"] = "About";
+	if (HttpContextAccessor.HttpContext.Session.GetString("account") == null)
+		Layout = "~/Views/Shared/_Layout.cshtml";
+	else
+		Layout = "~/Views/Shared/_LayoutMember.cshtml";
+}
+
+<div class="banner">
+	<img src="~/Images/about.png" class="banner-about" />
+</div>
+
+
+

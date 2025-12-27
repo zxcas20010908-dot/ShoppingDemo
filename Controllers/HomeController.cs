@@ -99,5 +99,13 @@ namespace Demo1.Controllers
             ViewBag.message = "註冊成功，請重新登入";
             return RedirectToAction("Login");
         }
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult ShoppingCar()
+        {
+            return View();
+        }
     }
 }
